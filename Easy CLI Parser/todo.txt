@@ -1,0 +1,8 @@
+﻿method signature
+check if the method is generic, if so, crash
+check if its an extension method: method.IsDefined(typeof(System.Runtime.CompilerServices.ExtensionAttribute),
+check for ref's and outs:
+				if (param.ParameterType.IsByRef)
+                    sigBuilder.Append("ref ");
+                else if (param.IsOut)
+                    sigBuilder.Append("out ");
