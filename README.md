@@ -2,6 +2,7 @@
 Transform any project into a CLI program
 
 Using annotations that are read via reflection at runtime, this library makes it easy to create CLI's
+
 for example:
 ```
 [CLIMethod]
